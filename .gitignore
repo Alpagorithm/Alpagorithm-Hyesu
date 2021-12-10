@@ -1,4 +1,10 @@
 
+.DS_Store
+.idea
+*/.idea
+*/*.iml
+*.iml
+
 ### macOS ###
 # General
 .DS_Store
