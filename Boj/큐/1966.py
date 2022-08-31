@@ -8,9 +8,10 @@ t = int(input())
 for _ in range(t):
     n, m = map(int, input().split())
     d = deque(list(map(int, input().split())))
-    nowIdx = m
-    ans = 0
+    nowIdx = m # 현재 타겟숫자의 위치
+    ans = 0 # 정답
 
+    # 우선순위가 큰거부터 앞에서 제거된다. 타겟숫자가 가장 클때까지 기다리는 것
     while True:
         if nowIdx == 0: # 내가 뽑을 숫자가 타겟숫자임 (m)
             if max(d) > d[nowIdx]: # 뒤에 더 큰게 있으면
